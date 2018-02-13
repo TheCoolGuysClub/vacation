@@ -15,6 +15,11 @@ app.get(`/`,(req,res)=>{
 //sentfile sent it to the excate location
 // app.sendFile(__dirname+"/public");
 })
+app.get(`/main.css`,(req,res)=>{
+  res.render(`main.css`,{
+    // p{color:red}
+  });
+})
 app.listen(3000,()=>{
 console.log("Listening on port 3000!");
 })
