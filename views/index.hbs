@@ -2,6 +2,98 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+      .hidden{
+        display:none;
+      }
+      #box{
+        border:solid
+      }
+      #top{
+      margin:10px;
+      border:solid;
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+    }
+      #toprigth{
+        margin:1px;
+        grid-column-start: 1;
+          grid-column-end:2;
+        /* border:solid */
+      }
+      #topmiddle{
+        margin:1px;
+        grid-column-start: 2;
+        grid-column-end:3;
+        /* border:solid */
+      }
+      #topleft{
+        margin:1px;
+        grid-column-start: 3;
+        grid-column-end:4;
+
+        }
+    #middle{
+      margin:10px;
+      border:solid;
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+    }
+    #middlerigth{
+      margin-left:5px;
+      margin:top:5px;
+      grid-column-start: 1;
+        grid-column-end:2;
+      /* border:solid */
+    }
+    #middlemiddle{
+      margin-left:5px;
+      margin:top:5px;
+      grid-column-start: 2;
+      grid-column-end:3;
+      /* border:solid */
+    }
+    #middleleft{
+      margin-left:5px;
+      margin:top:5px;
+      grid-column-start: 3;
+      grid-column-end:3;
+
+      }
+
+      #footer{
+        margin:10px;
+        border:solid;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+      }
+      #footerrigth{
+        margin-left:5px;
+        margin:top:5px;
+        grid-column-start: 1;
+          grid-column-end:2;
+        /* border:solid */
+      }
+      #footermiddle{
+        margin-left:5px;
+        margin:top:5px;
+        grid-column-start: 2;
+        grid-column-end:3;
+        /* border:solid */
+      }
+      #footerleft{
+        margin-left:5px;
+        margin:top:5px;
+        grid-column-start: 3;
+        grid-column-end:3;
+
+        }
+
+)
+
+    </style>
+
+
     <meta charset="utf-8">
     <!-- <link rel="stylesheet" href="/main.css"> -->
     <link rel="stylesheet" href="./public/css/style.css" />
@@ -15,18 +107,18 @@
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-
+    <div id="box">
       <div id="top">
         <section id="topright">
-          <p>A</p>
+          City A
         </section>
 
         <section id="topmiddle">
-          <p>B</p>
+          City B
         </section>
 
         <section id="topleft">
-          <p>C</p>
+          City C
         </section>
 
       </div>
@@ -34,15 +126,15 @@
       <div id="middle">
         <section id= "middleright">
           <p class="A hidden">
-
+            hi
           </p>
 
           <p class="B hidden">
-
+            hi
           </p>
 
           <p class="C hidden">
-
+            hi
           </p>
 
         </section>
@@ -128,6 +220,6 @@
 
         </section>
       </div>
-
+    </div>
   </body>
 </html>
