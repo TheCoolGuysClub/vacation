@@ -18,6 +18,7 @@ app.get(`/`,(req,res)=>{
     pageTitle:`Home`
   });
 app.get(`/losangelos`,(req,res)=>{
+  temperature:`3000`,
   res.render(`index.hbs`,{
     CityName:`Los Angelos`,
     imgone:`http://travel.home.sndimg.com/content/dam/images/travel/fullset/2011/09/12/af/chicago-lake-shore-drive.rend.hgtvcom.616.462.suffix/1491585454223.jpeg`,
@@ -27,6 +28,7 @@ app.get(`/losangelos`,(req,res)=>{
 });
 app.get(`/sanantonio`,(req,res)=>{
   res.render(`index.hbs`,{
+    temperature:`3000`,
     CityName:`San Antonio`,
     imgone:`https://www.chcp.edu/sites/default/files/CHCP-San-Antonio-Campus.jpg`,
     imgtwo:`https://cache-graphicslib.viator.com/graphicslib/thumbs360x240/10152/SITours/san-antonio-super-pass-in-san-antonio-424265.jpg`,
@@ -35,6 +37,7 @@ app.get(`/sanantonio`,(req,res)=>{
 });
 app.get(`/chicago`,(req,res)=>{
   res.render(`index.hbs`,{
+    temperature:`3000`,
     CityName:`Chicago`,
     imgone:`https://urbanmatter.com/chicago/wp-content/uploads/2015/04/Chicago-Architecture.jpg`,
     imgtwo:`http://www.essexinn.com/d/essexinn/media/Attractions/3583017878_ee2e8e3d8b_b_1423674445483.jpg`,
