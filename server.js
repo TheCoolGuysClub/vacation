@@ -1,7 +1,7 @@
 const express = require(`express`);
 const hbs = require(`hbs`);
 const path = require(`path`);
-// require('./public/css/style.css');
+
 const app= express();
 
 //this make anything in public to be avaible to the js
