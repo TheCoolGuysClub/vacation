@@ -1,13 +1,6 @@
 const request = require('request');
-
 const weatherResults=(lag,long,callback)=>{
-  // location: {
-  // lat: 37.4357409,
-  // lng: -122.1556904
-  // },
-
   request({
-
     url:`https://api.darksky.net/forecast/7fa261da4fc6cad0aef6384618ce197e/${lag},${long}`,
     json:true
     },
@@ -24,23 +17,19 @@ const weatherResults=(lag,long,callback)=>{
         const min = new Date().getMinutes();
         const sec = new Date().getSeconds();
         const icon = body.currently.icon;
-        console.log(" (╯°□°）╯︵ ┻━┻");
+        // console.log(" (╯°□°）╯︵ ┻━┻");
         console.log(`The temperature is ${temperature} degrees, for me, it feels like ${apperntTemperature} degrees`);
         console.log(`the visibility is ${visibility}`);
         console.log(`the nearest storm is about ${nearestSotrmDistance} miles away`);
         console.log(`The current date is ${month}/${day}/${year},the time is ${hour}:${min}:${sec}`);
-        console.log("┻━┻ミ＼(≧ﾛ≦＼)");
         console.log(`The weather is ${icon}`);
         // console.log(`The sun is up for ${sunriseTime} seconds! And will set in ${sunsetTime} seconds!`);
+        return temperature;
       }
   else {
         console.log("Unable to fetch temperature");
       }
   })
-  //
-
-
-
 }
 module.exports={
   weatherResults

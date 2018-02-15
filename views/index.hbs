@@ -2,6 +2,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script type="text/javascript"src = "./views/weather/weather.js">
+
+    </script>
+
+
+
+
     <style>
       .hidden{
         /* display:none; */
@@ -105,10 +112,14 @@
           height:300px;
           width:100%;
         }
+        #geocode{
+          text-align: center;
+          font-size:18px;
+        }
     </style>
     <meta charset="utf-8">
     <!-- <link rel="stylesheet" href="/main.css"> -->
-    <link rel="stylesheet" href="/public/css/style.css">
+    <!-- <link rel="stylesheet" href="/public/css/style.css"> -->
     <!-- <link rel="stylesheet" href="./public/css/style.css"> -->
     <title>Vacation</title>
   </head>
@@ -133,7 +144,7 @@
           {{CityName}}
         </h1>
         <section id="geocode">
-          <p> The temperature is {{temerature}} degrees</p>
+          <p> The temperature is {{temperature}} degrees</p>
         </section>
       <div id="middle">
         <section id= "middleright">
@@ -148,8 +159,10 @@
         </section>
       </div>
       <div id="footer">
-        Copy Right Paly WebDev
+        Copy Right Paly WebDev {{getCurrentYear}}
+
       </div>
     </div>
+
   </body>
 </html>
