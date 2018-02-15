@@ -12,6 +12,9 @@ hbs.registerPartials(path.join(__dirname,"view","partials"))
 app.get(`/`,(req,res)=>{
   // res.redirect(`www.paly.net`);
   res.render(`index.hbs`,{
+    imgone:`https://mitechnews.com/wp-content/uploads/2017/08/on-vacation.jpg`,
+    imgtwo:`http://i2.cdn.turner.com/money/dam/assets/140730120927-employee-mandatory-vacation-1024x576.jpg`,
+    imgthree:`https://www.lachicotte.com/images/rotate/vacation-rentals-slider3.jpg`,
     CityName:`Choose Your City`,
     content:`Jeremy is a despacito`,
     school:`Paly`,
