@@ -6,9 +6,10 @@ const axios = require(`axios`);
 const app= express();
 
 //this make anything in public to be avaible to the js
-app.use(express.static(path.join(__dirname,"public","css")));
-
 app.set(`view engine`,`hbs`);
+app.use(express.static(path.join(__dirname,"public")));
+
+
 hbs.registerPartials(path.join(__dirname,"view","partials"));
 hbs.registerHelper(`getCurrentYear`,()=>{
   return new Date().getFullYear();
